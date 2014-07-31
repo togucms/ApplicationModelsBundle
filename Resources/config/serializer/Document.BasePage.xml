@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+
+    <class name="Togu\ApplicationModelsBundle\Document\BasePage" exclusion-policy="ALL" >
+        <xml-namespace prefix="atom" uri="http://www.w3.org/2005/Atom"/>
+        
+        <property name="id" expose="true" />
+        <property name="section" expose="true" type="referenceone" />
+
+        <property name="title" expose="true" type="string" />
+        <property name="metaDescription" expose="true" access-type="public_method" accessor-getter="getMetaDescription" accessor-setter="setMetaDescription" type="string" />
+        <property name="metaKeywords" expose="true" type="string" accessor-getter="getMetaKeywords" accessor-setter="setMetaKeywords" />
+        
+    </class>
+    
+</serializer>
