@@ -184,7 +184,6 @@ abstract class BaseSection
 	 * @return Model
 	 */
 	public function setParentId($parentSection) {
-//		$this->setParentSection($parentSection->getSectionConfig()->getParentDocument());
 		$this->parentSection = $parentSection->getSectionConfig()->getParentDocument();
 		return $this;
 	}

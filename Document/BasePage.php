@@ -70,6 +70,11 @@ abstract class BasePage extends StaticContent implements SeoAwareInterface
 	 */
 	protected $metaKeywords;
 
+	/**
+	 * @JMS\Expose
+	 */
+	protected $url;
+
     /**
      * Constructor
      */
@@ -183,5 +188,22 @@ abstract class BasePage extends StaticContent implements SeoAwareInterface
      */
     public function getMetaKeywords() {
     	return $this->getSeoMetadata()->getMetaKeywords();
+    }
+
+    /**
+     *
+     * @param string $url
+     * @return \Togu\ApplicationModelsBundle\Document\BasePage
+     */
+    public function setUrl($url) {
+    	$this->url = $url;
+    	return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUrl() {
+    	return $this->url;
     }
 }

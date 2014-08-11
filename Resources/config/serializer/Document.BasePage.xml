@@ -10,6 +10,7 @@
         <property name="title" expose="true" type="string" />
         <property name="metaDescription" expose="true" access-type="public_method" accessor-getter="getMetaDescription" accessor-setter="setMetaDescription" type="string" />
         <property name="metaKeywords" expose="true" type="string" accessor-getter="getMetaKeywords" accessor-setter="setMetaKeywords" />
+        <property name="url" expose="true" type="string" />
         
     </class>
     
